@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Fitness</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Libertinus+Math&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="Picture1.png" sizes="64*64" type="image/x-icon">
+
+    <style>
+        /* css reset */
+        body {
+            font-family: "Baloo Bhai 2", sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('bgphoto.jpg');
+            height: 4544px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 79px;
+            font-weight: bold;
+
+        }
+
+        .left {
+            /* left for logo */
+            /* border: 3px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 65px;
+            left: 78px;
+            padding: 40px;
+            margin-top: 0px;
+
+
+
+        }
+
+
+        .mid {
+            /*to make anything centre display must be block
+              and width should be given and margin should be auto*/
+
+            /* mid for navbar */
+            /* border: 3px solid green; */
+            display: block;
+            width: 35%;
+            margin: 133px auto;
+
+
+
+
+
+        }
+
+        .right {
+
+            /* right for buttons */
+            /* border: 3px solid yellowgreen; */
+            display: inline-block;
+            position: absolute;
+            top: 40px;
+            right: 100px;
+            padding: 84px;
+
+
+        }
+
+        .navbar {
+            list-style: none;
+
+
+        }
+
+        li a {
+            text-decoration: none;
+            margin: 22px;
+            padding: 34px;
+            color: white;
+
+        }
+
+        #name {
+            font-size: 66px;
+            text-align: center;
+            line-height: 34%;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        a:hover,
+        a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .left img {
+
+            filter: invert(100%);
+            display: block;
+            width: 36%;
+            margin: auto;
+
+
+        }
+
+        .btn {
+            font-size: 53px;
+            margin: 28px;
+            background-color: black;
+            color: white;
+            border-radius: 31px;
+            border: 3px solid grey;
+            cursor: pointer;
+            font-family: "Baloo Bhai 2", sans-serif;
+            font-weight: bold;
+            padding: 18px;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(65, 61, 61);
+
+
+        }
+
+        .container {
+            border: 6px solid gray;
+            margin: 8% 7%;
+            padding: 5% 4%;
+            width: 30%;
+            border-radius: 84px;
+
+        }
+
+        .form-group input {
+            font-size: 73px;
+            font-family: "Baloo Bhai 2", sans-serif;
+            text-align: center;
+            display: block;
+            width: 68%;
+            margin: 22px auto;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+
+        #button {
+            display: block;
+            width: 29%;
+            margin: 4% auto;
+        }
+
+        .container h1 {
+            text-align: center;
+            line-height: 168px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left"> <img src="barbell.png" alt="">
+            <div id="name">
+                Zenith Fitness
+            </div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Query</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button><button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1> Join The Best Gym of Delhi Now</h1>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" id="button">SUBMIT</button>
+        </form>
+    </div>
+</body>
+
+</html>
